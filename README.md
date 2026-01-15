@@ -4,4 +4,4 @@
 
 IP адрес 158.160.220.63
 Frontend https://mestosmiku.nomorepartiessbs.ru
-Backend 158.160.220.63
+Backend api.mestosmiku.nomorepartiessbs.ru
