@@ -21,7 +21,7 @@ module.exports = {
       repo: 'https://github.com/Smikulenko/nodejs-pm2-deploy.git',
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/current/backend`,
-      'post-deploy': 'cd backend  &&npm i && npm run build && pm2 status &&pm2 startOrRestart ecosystem.config.js --env production',
+      'post-deploy': 'cd backend && node -v &&npm i && npm run build && pm2 status &&pm2 startOrRestart ecosystem.config.js --env production',
     },
   },
 };
